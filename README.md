@@ -1,5 +1,5 @@
 # SCP-343 for your server!
-**Еhis plugin adds scp-343 to the game, it randomly teleports via throwing an ionette, gives out items via "throwing out a radio"**
+**This plugin adds scp-343 to the game, it randomly teleports via throwing an ionette, gives out items via "throwing out a radio"**
 
 **Commands for admins: 's343'**
 
