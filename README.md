@@ -3,7 +3,7 @@
 
 **Commands for admins: 's343'**
 
-№ How download it?
+# How download it?
 **1. Download SCP-343 for YS.dll in latest release**
 **2. Put .dll file into Exiled --> Plugins folder**
 **3. Then configurate config**
