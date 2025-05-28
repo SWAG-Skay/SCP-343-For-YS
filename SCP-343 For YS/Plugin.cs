@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using System.Collections.Generic;
 using Exiled.API.Enums;
@@ -47,6 +47,7 @@ namespace RandomChapterSB
             Exiled.Events.Handlers.Player.InteractingDoor += OnInteractingDoor;
             Exiled.Events.Handlers.Player.FlippingCoin += OnCoinIsThrowen;
             Instance = this;
+            Config.PostInitialize();
 
             spawn343Command = new Spawn343Command(this);
             flyCommand = new FlyCommand(this);
@@ -182,7 +183,7 @@ namespace RandomChapterSB
             if (ev.Item.Type == ItemType.Radio && ev.IsThrown)
             {
                 if (lastStandardSetActivation.TryGetValue(ev.Player, out DateTime lastActivation) &&
-                   (DateTime.Now - lastActivation).TotalSeconds < 65)
+                   (DateTime.Now - lastActivation).TotalSeconds < Config.ItemSetCooldown)
                 {
                     ev.Player.ShowHint(Config.CDMessage, 3);
                     ev.IsAllowed = false;
@@ -245,35 +246,6 @@ namespace RandomChapterSB
             player.AddItem(ItemType.Coin);
             player.AddItem(ItemType.Radio);
         }
-
-        private bool IsCaseItem(ItemType item)
-        {
-            switch (item)
-            {
-                case ItemType.KeycardScientist:
-                case ItemType.KeycardZoneManager:
-                case ItemType.KeycardFacilityManager:
-                case ItemType.KeycardChaosInsurgency:
-                case ItemType.KeycardO5:
-                case ItemType.KeycardMTFCaptain:
-                case ItemType.SCP207:
-                case ItemType.SCP268:
-                case ItemType.SCP1576:
-                case ItemType.SCP1853:
-                case ItemType.GunCOM15:
-                case ItemType.GunCOM18:
-                case ItemType.GunRevolver:
-                case ItemType.Adrenaline:
-                case ItemType.Medkit:
-                case ItemType.Painkillers:
-                case ItemType.Flashlight:
-                case ItemType.Lantern:
-                    return true;
-                default:
-                    return false;
-            }
-        }
-
         private void TeleportPlayer(Player player)
         {
             List<Player> targets = Player.List
@@ -342,37 +314,40 @@ namespace RandomChapterSB
 
         private void GiveKeycards(Player player)
         {
-            player.AddItem(ItemType.KeycardScientist);
-            player.AddItem(ItemType.KeycardZoneManager);
-            player.AddItem(ItemType.KeycardFacilityManager);
-            player.AddItem(ItemType.KeycardChaosInsurgency);
-            player.AddItem(ItemType.KeycardO5);
-            player.AddItem(ItemType.KeycardMTFCaptain);
+            foreach (var itemType in Config.KeycardItems)
+            {
+                player.AddItem(itemType);
+            }
         }
 
         private void GiveSCPItems(Player player)
         {
-            player.AddItem(ItemType.SCP207);
-            player.AddItem(ItemType.SCP268);
-            player.AddItem(ItemType.SCP1576);
-            player.AddItem(ItemType.SCP1853);
+            foreach (var itemType in Config.SCPItems)
+            {
+                player.AddItem(itemType);
+            }
         }
 
         private void GivePistols(Player player)
         {
-            player.AddItem(ItemType.GunCOM15);
-            player.AddItem(ItemType.GunCOM18);
-            player.AddItem(ItemType.GunRevolver);
+            foreach (var itemType in Config.PistolItems)
+            {
+                player.AddItem(itemType);
+            }
         }
 
         private void GiveItems(Player player)
         {
-            player.AddItem(ItemType.Adrenaline);
-            player.AddItem(ItemType.Medkit);
-            player.AddItem(ItemType.Painkillers);
-            player.AddItem(ItemType.Flashlight);
-            player.AddItem(ItemType.Lantern);
+            foreach (var itemType in Config.MiscItems)
+            {
+                player.AddItem(itemType);
+            }
             player.AddItem(ItemType.Radio);
+        }
+
+        private bool IsCaseItem(ItemType item)
+        {
+            return Config.AllCaseItems.Contains(item);
         }
     }
 }
