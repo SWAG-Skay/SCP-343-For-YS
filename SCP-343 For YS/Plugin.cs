@@ -17,7 +17,7 @@ namespace RandomChapterSB
         public override string Author => "Skay";
         public override string Name => "SCP-343";
         public override string Prefix => "s343";
-        public override Version Version => new Version(1, 2, 0);
+        public override Version Version => new Version(1, 2, 1);
         public override Version RequiredExiledVersion => new Version(9, 6, 0);
 
         public List<Player> ChapterSBPlayers { get; private set; } = new List<Player>();
