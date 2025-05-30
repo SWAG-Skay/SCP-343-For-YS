@@ -23,7 +23,6 @@
 Система подсказок с настраиваемыми сообщениями
 
 # ⚙️ Команды
-Команда	Описание	Доступ
 .s343 [ID]	Спавнит вас (или указанного игрока) как SCP-343	Admin
 
 
@@ -62,7 +61,6 @@ Integration with other SCPs (cannot be attacked by SCP-096, etc.)
 A hint system with customizable messages
 
 # ⚙️ Commands
-Command Description Access
 .s343 [ID]	Spawns you (or the specified player) as SCP-343 Admin
 
 
