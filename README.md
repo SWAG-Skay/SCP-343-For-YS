@@ -31,7 +31,7 @@
 # 📥 Установка
 Скачайте последнюю версию плагина из раздела Releases
 
-Поместите файл SCP343.dll в папку %AppData%\EXILED\Plugins
+Поместите файл SCP343 for YS.dll в папку %AppData%\EXILED\Plugins
 
 Перезапустите сервер
 
@@ -69,6 +69,6 @@ A hint system with customizable messages
 # 📥 Installation
 Download the latest version of the plugin from the Releases section
 
-Place the file SCP343.dll to %AppData%\EXILED\Plugins folder
+Place the file SCP343 for YS.dll to %AppData%\EXILED\Plugins folder
 
 Restart the server
