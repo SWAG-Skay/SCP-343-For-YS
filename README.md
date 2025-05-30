@@ -64,7 +64,7 @@ Command Description Access
 .s343 [ID]	Spawns you (or the specified player) as SCP-343 Admin
 .fly Activates flight mode for 25 seconds (5 minutes CD) of SCP-343
 
-# , Installation
+# 📥 Installation
 Download the latest version of the plugin from the Releases section
 
 Place the file SCP343.dll to %AppData%\EXILED\Plugins folder
