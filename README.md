@@ -25,6 +25,8 @@
 # ⚙️ Команды
 Команда	Описание	Доступ
 .s343 [ID]	Спавнит вас (или указанного игрока) как SCP-343	Admin
+
+
 .fly	Активирует режим полёта на 25 секунд (5 минут КД)	SCP-343
 
 # 📥 Установка
@@ -62,6 +64,8 @@ A hint system with customizable messages
 # ⚙️ Commands
 Command Description Access
 .s343 [ID]	Spawns you (or the specified player) as SCP-343 Admin
+
+
 .fly Activates flight mode for 25 seconds (5 minutes CD) of SCP-343
 
 # 📥 Installation
