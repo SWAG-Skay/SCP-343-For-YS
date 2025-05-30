@@ -33,7 +33,7 @@ namespace RandomChapterSB
         public string NoPlayersForTp { get; set; } = "<color=red>There are no suitable players for teleportation!</color>";
         
         [Description("Hint when 343 have Cooldown")]
-        public string CDMessage { get; set; } = "<color=yellow>Cooldown {0:0} sec.</color>";
+        public string CDMessage { get; set; } = "<color=yellow>Cooldown</color>";
 
         [Description("Hint when 343 interacting with SCP-330")]
         public string InteractingWith330 { get; set; } = "<color=red>Undo action! Made to remove bugs</color>";
