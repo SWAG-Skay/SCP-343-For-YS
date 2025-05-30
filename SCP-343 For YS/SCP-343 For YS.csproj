@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -31,56 +31,57 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony">
-      <HintPath>..\..\..\..\Desktop\Libs for 14.1\0Harmony.dll</HintPath>
-    </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\Desktop\Libs for 14.1\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\Вещи Код\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>..\..\..\..\Desktop\Libs for 14.1\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\Вещи Код\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
-    <Reference Include="CommandSystem.Core">
-      <HintPath>..\..\..\..\Desktop\Libs for 14.1\CommandSystem.Core.dll</HintPath>
+    <Reference Include="Assembly-CSharp-Publicized, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExMod.Exiled.9.6.0\lib\net48\Assembly-CSharp-Publicized.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Exiled.API">
-      <HintPath>..\..\..\..\Desktop\Libs for 14.1\Exiled.API.dll</HintPath>
+    <Reference Include="CommandSystem.Core, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExMod.Exiled.9.6.0\lib\net48\CommandSystem.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Exiled.CreditTags">
-      <HintPath>..\..\..\..\Desktop\Libs for 14.1\Exiled.CreditTags.dll</HintPath>
+    <Reference Include="Exiled.API, Version=9.6.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\ExMod.Exiled.9.6.0\lib\net48\Exiled.API.dll</HintPath>
     </Reference>
-    <Reference Include="Exiled.CustomItems">
-      <HintPath>..\..\..\..\Desktop\Libs for 14.1\Exiled.CustomItems.dll</HintPath>
+    <Reference Include="Exiled.CreditTags, Version=9.6.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\ExMod.Exiled.9.6.0\lib\net48\Exiled.CreditTags.dll</HintPath>
     </Reference>
-    <Reference Include="Exiled.CustomRoles">
-      <HintPath>..\..\..\..\Desktop\Libs for 14.1\Exiled.CustomRoles.dll</HintPath>
+    <Reference Include="Exiled.CustomItems, Version=9.6.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\ExMod.Exiled.9.6.0\lib\net48\Exiled.CustomItems.dll</HintPath>
     </Reference>
-    <Reference Include="Exiled.Events">
-      <HintPath>..\..\..\..\Desktop\Libs for 14.1\Exiled.Events.dll</HintPath>
+    <Reference Include="Exiled.CustomRoles, Version=9.6.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\ExMod.Exiled.9.6.0\lib\net48\Exiled.CustomRoles.dll</HintPath>
     </Reference>
-    <Reference Include="Exiled.Loader">
-      <HintPath>..\..\..\..\Desktop\Libs for 14.1\Exiled.Loader.dll</HintPath>
+    <Reference Include="Exiled.Events, Version=9.6.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\ExMod.Exiled.9.6.0\lib\net48\Exiled.Events.dll</HintPath>
     </Reference>
-    <Reference Include="Exiled.Permissions">
-      <HintPath>..\..\..\..\Desktop\Libs for 14.1\Exiled.Permissions.dll</HintPath>
+    <Reference Include="Exiled.Loader, Version=9.6.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\ExMod.Exiled.9.6.0\lib\net48\Exiled.Loader.dll</HintPath>
     </Reference>
-    <Reference Include="HintServiceMeow-Exiled">
-      <HintPath>..\..\..\..\Desktop\Libs for 14.1\HintServiceMeow-Exiled.dll</HintPath>
+    <Reference Include="Exiled.Permissions, Version=9.6.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\ExMod.Exiled.9.6.0\lib\net48\Exiled.Permissions.dll</HintPath>
     </Reference>
-    <Reference Include="LabApi">
-      <HintPath>..\..\..\..\Desktop\Libs for 14.1\LabApi.dll</HintPath>
+    <Reference Include="LabApi, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\ExMod.Exiled.9.6.0\lib\net48\LabApi.dll</HintPath>
     </Reference>
     <Reference Include="Mirror">
-      <HintPath>..\..\..\..\Desktop\Libs for 14.1\Mirror.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\Вещи Код\Mirror.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Posix">
-      <HintPath>..\..\..\..\Desktop\Libs for 14.1\Mono.Posix.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\Вещи Код\9.6.0\Mono.Posix.dll</HintPath>
     </Reference>
-    <Reference Include="NorthwoodLib">
-      <HintPath>..\..\..\..\Desktop\Libs for 14.1\NorthwoodLib.dll</HintPath>
+    <Reference Include="NorthwoodLib, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExMod.Exiled.9.6.0\lib\net48\NorthwoodLib.dll</HintPath>
     </Reference>
-    <Reference Include="SemanticVersioning">
-      <HintPath>..\..\..\..\Desktop\Libs for 14.1\SemanticVersioning.dll</HintPath>
+    <Reference Include="NVorbis">
+      <HintPath>..\..\..\..\Desktop\Вещи Код\bin\NVorbis.dll</HintPath>
+    </Reference>
+    <Reference Include="Pooling">
+      <HintPath>..\..\..\..\Desktop\Вещи Код\Pooling.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -91,25 +92,40 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\..\..\Desktop\Вещи Код\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\Desktop\Libs for 14.1\UnityEngine.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\Вещи Код\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\..\..\Desktop\Вещи Код\UnityEngine.AudioModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\..\Desktop\Libs for 14.1\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\Вещи Код\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PhysicsModule">
-      <HintPath>..\..\..\..\Desktop\Libs for 14.1\UnityEngine.PhysicsModule.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\Вещи Код\UnityEngine.PhysicsModule.dll</HintPath>
     </Reference>
-    <Reference Include="YamlDotNet">
-      <HintPath>..\..\..\..\Desktop\Libs for 14.1\YamlDotNet.dll</HintPath>
+    <Reference Include="YamlDotNet, Version=11.0.0.0, Culture=neutral, PublicKeyToken=ec19458f3c15af5e, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExMod.Exiled.9.6.0\lib\net48\YamlDotNet.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config.cs" />
-    <Compile Include="FlyCommand.cs" />
+    <Compile Include="Commands\FlyCommand.cs" />
+    <Compile Include="EventHandlers.cs" />
+    <Compile Include="Extensions.cs" />
     <Compile Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Spawn343Command.cs" />
+    <Compile Include="Commands\Spawn343Command.cs" />
+    <Compile Include="Translations.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
